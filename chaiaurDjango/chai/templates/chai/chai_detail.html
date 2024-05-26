@@ -1,0 +1,22 @@
+{% extends "layout.html" %} 
+
+{% block title %}Chai{% endblock %} 
+
+{% block content%}
+
+<h1 class="text-center justify-center">Chai Detail </h1><br/>
+
+<div class="max-w-screen-xl p-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+    <img src="{{chai.image.url}}" alt=""/><br/>
+
+    <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{chai.name}} having a price of Rs. {{chai.price}}</h3> <br/>
+
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{chai.description}}</p><br/>
+
+</div>
+
+{% endblock %}
+
+
+
